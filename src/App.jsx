@@ -55,7 +55,7 @@ function App() {
   const [isMobileView, setIsMobileView] = useState(false);
 
   return (
-    <main className={`w-full h-screen`}>
+    <main className={`w-full h-full`}>
       <header>
         <Header
           isActiveMenu={isActiveMenu}
@@ -77,7 +77,7 @@ function App() {
         <section>
           <ImagesMain images={images} imagesThumbnail={imagesThumbnail} />
         </section>
-        <section className="desktop:flex desktop:flex-col desktop:justify-center mb-24 desktop:mb-0">
+        <section className="desktop:flex desktop:flex-col desktop:justify-center mb-20 desktop:mb-0">
           <ProductInfo />
           <PricePruduct />
           <AddProductToCart
