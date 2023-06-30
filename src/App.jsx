@@ -77,7 +77,7 @@ function App() {
         <section>
           <ImagesMain images={images} imagesThumbnail={imagesThumbnail} />
         </section>
-        <section className="desktop:flex desktop:flex-col desktop:justify-center">
+        <section className="desktop:flex desktop:flex-col desktop:justify-center mb-24 desktop:mb-0">
           <ProductInfo />
           <PricePruduct />
           <AddProductToCart
