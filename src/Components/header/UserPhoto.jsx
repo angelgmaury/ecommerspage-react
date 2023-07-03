@@ -1,5 +1,5 @@
 import React from "react";
-import Avatar from "../assets/image-avatar.png";
+import Avatar from "./img/perritoFormal.jpeg";
 
 export function UserPhoto() {
   return (

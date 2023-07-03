@@ -29,8 +29,8 @@ html{
      height: 40px;
      width: 40px;
      border-radius: 50%;
-     background-color: white;
      z-index: 1;
+     font-size: 22px;
 }
 
 .textCompleted{

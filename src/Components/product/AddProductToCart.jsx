@@ -1,11 +1,12 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 import {
   faPlus,
   faMinus,
   faCartShopping,
 } from "@fortawesome/free-solid-svg-icons";
-import { useState } from "react";
-import { contentCart } from "../Data/productsCart";
+
+import { contentCart } from "../../data/productsCart";
 
 export function AddProductToCart({ count, setCount, handleAddProductToCart }) {
   const handleCountPlus = () => {

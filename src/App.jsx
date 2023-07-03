@@ -1,92 +1,39 @@
 import { useState, useEffect } from "react";
-import { Header } from "./Components/Header";
-import { HeaderMenuMobile } from "./Components/HeaderMenuMobile";
-import { ImagesMain } from "./Components/ImagesMain";
-
-import { images } from "./Data/images";
-
-import { ProductInfo } from "./Components/ProductInfo";
-
-import { PricePruduct } from "./Components/PricePruduct";
-
-import { AddProductToCart } from "./Components/AddProductToCart";
-
-import { imagesThumbnail } from "./Data/imagesThumbnail";
+import { Header } from "./Components/header/Header";
+import { Collections } from "./Components/collections/Collections";
+import { productsCollections } from "./data/productCollections";
 
 function App() {
-  const [isActiveMenu, setIsActiveMenu] = useState(false);
-
-  const [isModalActive, setIsModalActive] = useState(false);
-
-  const [count, setCount] = useState(0);
-
   const storedCart = localStorage.getItem("cart");
   const initialCart = storedCart ? JSON.parse(storedCart) : [];
-
+  const [activeSection, setActiveSection] = useState("collections");
   const [contentCart, setContentCart] = useState(initialCart);
 
-  const handleAddProductToCart = () => {
-    const productToAdd = {
-      img: imagesThumbnail[0].image,
-      title: "Fall Limited Edition Sneakers",
-      id: 1,
-      price: 125.0,
-      totalProducts: count,
-      priceTotal: count * 125.0,
-    };
-
-    localStorage.setItem("cart", JSON.stringify(productToAdd));
-
-    setContentCart(productToAdd);
-
-    console.log("agregando");
-  };
+  const [selectedProduct, setSelectedProduct] = useState(null);
 
   useEffect(() => {
     const storedCart = JSON.parse(localStorage.getItem("cart")) || [];
     setContentCart(storedCart);
   }, []);
 
-  const handleRemoveProductToCart = () => {
-    localStorage.removeItem("cart");
-    setContentCart([]);
-  };
-
-  const [isMobileView, setIsMobileView] = useState(false);
-
   return (
-    <main className={`w-full h-full`}>
-      <header>
-        <Header
-          isActiveMenu={isActiveMenu}
-          setIsActiveMenu={setIsActiveMenu}
+    <main className={`w-full h-full mb-8`}>
+      <Header
+        contentCart={contentCart}
+        setContentCart={setContentCart}
+        setActiveSection={setActiveSection}
+        product={selectedProduct}
+      />
+
+      {activeSection && (
+        <Collections
+          productsCollections={productsCollections}
+          activeSection={activeSection}
+          setSelectedProduct={setSelectedProduct}
           contentCart={contentCart}
-          handleRemoveProductToCart={handleRemoveProductToCart}
-          isMobileView={isMobileView}
-          setIsMobileView={setIsMobileView}
+          setContentCart={setContentCart}
         />
-        <HeaderMenuMobile
-          isActiveMenu={isActiveMenu}
-          setIsActiveMenu={setIsActiveMenu}
-          setIsModalActive={setIsModalActive}
-          isMobileView={isMobileView}
-          setIsMobileView={setIsMobileView}
-        />
-      </header>
-      <div className="desktop:grid grid-cols-2 desktop:w-full">
-        <section>
-          <ImagesMain images={images} imagesThumbnail={imagesThumbnail} />
-        </section>
-        <section className="desktop:flex desktop:flex-col desktop:justify-center mb-20 desktop:mb-0">
-          <ProductInfo />
-          <PricePruduct />
-          <AddProductToCart
-            count={count}
-            setCount={setCount}
-            handleAddProductToCart={handleAddProductToCart}
-          />
-        </section>
-      </div>
+      )}
     </main>
   );
 }
