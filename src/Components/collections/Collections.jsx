@@ -67,7 +67,7 @@ export function Collections({
                   <img
                     src={collection.imgMain}
                     alt={collection.title}
-                    className="my-6 object-cover h-[250px] tablet:w-[300px] "
+                    className="my-6 object-cover desktop:h-[250px] tablet:w-[300px] "
                   />
                 </figure>
                 <p
