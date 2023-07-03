@@ -49,7 +49,7 @@ export function Collections({
         <div>
           <h2 className="mx-5 desktop:mx-[66px] pt-6 pb-4 font-bold desktop:text-2xl text-lg tablet:text-2xl desktop:tracking-[3px] tracking-[2px] transition-all duration-300">
             {activeSection === "collections"
-              ? "Welcome To Sneakers"
+              ? "Welcome To Our Collection Of Sneakers"
               : activeSection === "men"
               ? "Welcome To Men's Shoes"
               : "Welcome To Women's Shoes"}
@@ -58,24 +58,26 @@ export function Collections({
             {productsFilterForSection.map((collection, index) => (
               <div
                 key={index}
-                className=" bg-gray-50 sombritaCart rounded-lg px-5 py-4 w-[350px] tablet:max-w-[270px] hover:scale-105 desktop:hover:scale-110  desktop:h-[300px] transition-all flex flex-col justify-center"
+                className=" bg-gray-50 sombritaCart rounded-lg px-6 py-4 w-[300px] tablet:w-[300px] hover:scale-105 desktop:hover:scale-110 desktop:h-[400px] desktop:w-[400px] transition-all "
               >
-                <h3 className="font-bold tracking-wider pl-2">
+                <h3 className="font-bold tracking-wider tablet:text-lg text-center">
                   {collection.title}
                 </h3>
-                <img
-                  src={collection.imgMain}
-                  alt={collection.title}
-                  className="my-4 object-cover max-w-[250px] max-h-[250px]"
-                />
-                <button
-                  className="font-bold tracking-wider mt-2 hover:underline underline-offset-4"
+                <figure className="flex justify-center items-center">
+                  <img
+                    src={collection.imgMain}
+                    alt={collection.title}
+                    className="my-6 object-cover h-[250px] tablet:w-[300px] "
+                  />
+                </figure>
+                <p
+                  className="font-bold tracking-wider mt-3 hover:underline underline-offset-4 cursor-pointer text-center"
                   onClick={() => {
                     handleProductClick(collection);
                   }}
                 >
-                  Learn More And Buy Now
-                </button>
+                  Learn More and Buy Now
+                </p>
               </div>
             ))}
           </section>
