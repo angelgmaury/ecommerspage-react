@@ -1,5 +1,5 @@
 # ONLINE SHOE TRADE. 👟
-#### **This is a simple page and static but with different types of functionalities.**
+## **This is a simple page and static but with different types of functionalities.**
 
 ## Here I leave you a main view of this sneakers page, both from a view of a desktop and mobile.
 
