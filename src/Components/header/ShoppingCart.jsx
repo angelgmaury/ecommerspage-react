@@ -20,8 +20,13 @@ export function ShoppingCart({ handleRemoveProductToCart }) {
         />
       </button>
       {contentCart.length === 0 ? null : (
-        <div className="absolute top-6 desktop:top-10 right-16 desktop:right-32 w-4 h-4 bg-orangeMain rounded-lg flex items-center justify-center text-white">
-          <p className="text-xs">{contentCart.length}</p>
+        <div
+          className="absolute top-6 desktop:top-10 right-16 desktop:right-[126px] w-[18px] h-[18px] bg-orangeMain rounded-lg flex items-center justify-center text-white cursor-pointer"
+          onClick={handleClicked}
+        >
+          <p className="text-xs">
+            {contentCart.length > 9 ? "+9" : contentCart.length}
+          </p>
         </div>
       )}
 

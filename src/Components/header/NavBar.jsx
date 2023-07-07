@@ -64,7 +64,7 @@ export function NavBar({
                 sneakers
               </h1>
 
-              <ul className="flex gap-8 relative top-0.5 transition-all font-bold text-lg text-neutrals-veryGrayishBlue">
+              <ul className="flex gap-8 relative top-0.5 transition-all  text-lg text-neutrals-veryGrayishBlue">
                 <li
                   className="cursor-pointer hover:text-black"
                   onClick={() => setActiveSection("collections")}

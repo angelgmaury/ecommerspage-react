@@ -1,6 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXmark, faBars } from "@fortawesome/free-solid-svg-icons";
-import { useEffect } from "react";
 
 export function MenuMobile({
   isActiveMenu,
@@ -29,7 +28,7 @@ export function MenuMobile({
                   className="mb-10 mt-10 text-xl"
                 />
               </button>
-              <ul>
+              <ul className="mt-5">
                 <li
                   className="cursor-pointer hover:text-black font-bold mb-5"
                   onClick={() => {
