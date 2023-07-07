@@ -5,17 +5,18 @@
 
 ## DESKTOP:
 
-![DESKTOPDEGINE-COMMERSPAGE](https://github.com/angelitoMaury/ecommerspage-react/assets/128613074/d6fc05bc-c7d6-478c-822a-8c405df3921f)
+![DESKTOPDESIGNE-ECOMMERSPAGE-](https://github.com/angelitoMaury/ecommerspage-react/assets/128613074/6f451034-1005-43b0-89ad-19c5c996ab5c)
 
 ## MOBILE:
 
-![MOBILEDESING-ECOMMERSPAGE](https://github.com/angelitoMaury/ecommerspage-react/assets/128613074/e919c881-d847-4d1c-9d06-a0f2001cd91e)
+![MOBILEDESIGN-ECOMMERSPAGE-](https://github.com/angelitoMaury/ecommerspage-react/assets/128613074/50c77c74-4acf-41cc-b9be-18438904c624)
 
 #### Apart from the main view I will also show you how the different sneakers would look when clicked.
 ## DESKTOP:
-![DESKTOP-PRODUCT](https://github.com/angelitoMaury/ecommerspage-react/assets/128613074/69aa9c22-60e0-40d3-b646-f29f4b99e384)
+![DESKTOP-PRODUCT-](https://github.com/angelitoMaury/ecommerspage-react/assets/128613074/d508fa81-f291-445b-b9b7-99b551d2ea26)
+
 ## MOBILE:
-![MOBILE-PRODUCT](https://github.com/angelitoMaury/ecommerspage-react/assets/128613074/0d15f064-411c-428e-96e6-3c7b20d95ce7)
+![MOBILE-PRODUCT-](https://github.com/angelitoMaury/ecommerspage-react/assets/128613074/b9a7295f-ad1f-4ec1-bb48-73301353fdab)
 
 ###### If you want to try it, you have the link here: https://angelitomaury.github.io/ecommerspage-react/
 
