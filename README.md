@@ -5,11 +5,11 @@
 
 ## DESKTOP:
 
-![DESKTOPDESIGNE-ECOMMERSPAGE-](https://github.com/angelitoMaury/ecommerspage-react/assets/128613074/6f451034-1005-43b0-89ad-19c5c996ab5c)
+![image](https://github.com/angelitoMaury/ecommerspage-react/assets/128613074/c2f8e61e-be57-4942-9305-604afc8f5725)
 
 ## MOBILE:
 
-![MOBILEDESIGN-ECOMMERSPAGE-](https://github.com/angelitoMaury/ecommerspage-react/assets/128613074/50c77c74-4acf-41cc-b9be-18438904c624)
+![image](https://github.com/angelitoMaury/ecommerspage-react/assets/128613074/933cd7b4-57d3-4b8d-ba24-d581d8e2fa74)
 
 #### Apart from the main view I will also show you how the different sneakers would look when clicked.
 ## DESKTOP:
