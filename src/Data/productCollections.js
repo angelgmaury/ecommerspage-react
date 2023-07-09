@@ -50,7 +50,7 @@ export const productsCollections = [
     title: "JORDAN 1 OG'S",
     description:
       "Discover the Jordan OG shoes! They are the symbol of style and performance. With its leather upper and air cushioning, these shoes give you comfort and elegance with every step. Get your Jordan OG and let yourself be carried away by the legend!",
-    price: 250,
+    price: 350,
     type: "men",
     descuento: 35,
     imagesVersions: [airJordanOG, jordan1BandW, jordan1WandB, jordan1RandW],
